@@ -6,9 +6,10 @@
 </head>
 <body>
 	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">News</a></li>
+		<li><a href="{{ url_for('index')}}">Home</a></li>
 		<li><a href="#">Blog</a></li>
+		<li><a href="{{ url_for('about')}}">About</a></li>
+		<li><a href="http://convertibo.herokuapp.com/" target="_blank">Projects</a></li>
 	</ul>
 
 {% block content %}
