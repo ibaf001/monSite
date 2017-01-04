@@ -1,0 +1,38 @@
+body {
+    background-color: #eff1f4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #dddddd; */
+}
+
+li {
+    float: left;
+    text-decoration: none
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.name {
+	color: #cc6699;
+	font-style: italic;
+	font-family: Courier New;
+}
+
+#mcontent {
+  width: 50%;
+  margin: 0 auto;
+}
