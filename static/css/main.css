@@ -1,13 +1,14 @@
+
 body {
     background-color: #eff1f4;
 }
 
-ul {
+.main_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #dddddd; */
+    
 }
 
 li {
