@@ -16,6 +16,10 @@ def about():
 def euler():
 	return render_template("euler.html")
 
+@app.route("/problem1")
+def problem1():
+	return render_template("/euler/problem1.html")
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
