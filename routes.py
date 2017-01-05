@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,redirect
 from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
@@ -13,12 +13,15 @@ def about():
 	return render_template("about.html")
 
 @app.route("/euler")
-def euler():
+@app.route("/euler/<int:problem>")
+def euler(problem=None):
+	if problem is not None:
+		return render_template("/euler/problem{}.html".format(problem))
 	return render_template("euler.html")
 
-@app.route("/problem1")
-def problem1():
-	return render_template("/euler/problem1.html")
+@app.errorhandler(404)
+def not_found(e):
+	return render_template("404.html")
 
 
 if __name__ == '__main__':
