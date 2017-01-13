@@ -3,6 +3,37 @@ body {
     background-color:#ccd9ff /* #eff1f4; */
 }
 
+
+#main_nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+#main_nav_bar li {
+    float: left;
+}
+
+
+
+#main_nav_bar li a {
+    display: block;
+    color: #bfbfbf; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#main_nav_bar  li a:hover {
+    color: white;
+    /* background-color: #111; */
+}
+
+
+/*
 .main_menu ul {
     list-style-type: none;
     margin: 0;
@@ -32,7 +63,7 @@ li a:hover {
 	font-style: italic;
 	font-family: Courier New;
 }
-
+*/
 #mcontent {
   width: 50%;
   margin: 0 auto;
