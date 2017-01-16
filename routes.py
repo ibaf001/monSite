@@ -16,7 +16,11 @@ def about():
 @app.route("/euler/<int:problem>")
 def euler(problem=None):
 	if problem is not None:
-		return render_template("/euler/problem{}.html".format(problem))
+		try:
+			return render_template("/euler/problem{}.html".format(problem))
+		except:
+			return render_template("404.html")
+
 	return render_template("euler.html")
 
 @app.errorhandler(404)

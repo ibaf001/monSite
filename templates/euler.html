@@ -9,7 +9,7 @@
     <div class="col-md-8">
     <h3 class="text-info">Project Euler Problems</h3>
 	 	<div class="list-group">
-	 	{% for num in range(1,6) %}
+	 	{% for num in range(1,51) %}
 	  		<a href="{{ url_for('euler',problem= num) }}" class="list-group-item">Problem {{ num }}</a>
 
 	  	{% endfor %}

@@ -32,7 +32,12 @@ body {
     /* background-color: #111; */
 }
 
-
+.codes {
+    color: black;
+}
+.not_found{
+    margin-top: 100px;
+}
 /*
 .main_menu ul {
     list-style-type: none;
